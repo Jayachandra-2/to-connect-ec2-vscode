@@ -1,0 +1,18 @@
+                ec2-server to vscode connectivity
+                ------------------------------------
+------->To create ec2-instance.After that connect the server.we can create a folder(ex:connect-ec2-to-vscode) in that folder we can create file(ex:app.py).
+
+------->After that we can go 'Visual studio code' then go to the extensions.search the 'remote-ssh'install. after complete the installation.then bottom of the left corner"><" symbol is there click the symbol.
+
+------->next step we are going to click open the window to open the couple of options.now here to click on  "connect host" add a new ssh host name " press enter to confirm your input or 'escape' to cancel.
+
+------->click on first option like "c:/user/hp/.ssh/config" open the file .
+       
+configuration:
+---------------
+    Host bastion
+    User ec2-user
+    HostName 44.212.28.39
+    IdentityFile C:\Users\hp\Downloads\dev.pem
+
+------> save the file. After ask the which ami os "ubuntu,linux,windows" to select os .after that ask the some permissions.click the continue.then go to the gitbash then try to connect like "ssh bastion"
